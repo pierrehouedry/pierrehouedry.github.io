@@ -1,3 +1,4 @@
+
 import { Fragment } from 'react';
 import { SanitizedPublication } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
@@ -13,55 +14,21 @@ const PublicationCard = ({
     const array = [];
     for (let index = 0; index < publications.length; index++) {
       array.push(
-        <div className="card shadow-lg compact bg-base-100" key={index}>
+        <div className="card shadow-lg compact bg-base-100 w-full" key={index}>
           <div className="p-8 h-full w-full">
-            <div className="flex items-center flex-col">
+            <div className="flex items-start flex-col">
               <div className="w-full">
-                <div className="px-4">
-                  <div className="text-center w-full">
-                    <h2 className="mb-2">
-                      {skeleton({
-                        widthCls: 'w-32',
-                        heightCls: 'h-8',
-                        className: 'mb-2 mx-auto',
-                      })}
-                    </h2>
-                    <div>
-                      {skeleton({
-                        widthCls: 'w-20',
-                        heightCls: 'h-4',
-                        className: 'mb-2 mx-auto',
-                      })}
-                    </div>
-                    <div>
-                      {skeleton({
-                        widthCls: 'w-20',
-                        heightCls: 'h-4',
-                        className: 'mb-2 mx-auto',
-                      })}
-                    </div>
-                    <div>
-                      {skeleton({
-                        widthCls: 'w-full',
-                        heightCls: 'h-4',
-                        className: 'mb-2 mx-auto',
-                      })}
-                    </div>
-                    <div>
-                      {skeleton({
-                        widthCls: 'w-full',
-                        heightCls: 'h-4',
-                        className: 'mb-2 mx-auto',
-                      })}
-                    </div>
-                    <div>
-                      {skeleton({
-                        widthCls: 'w-full',
-                        heightCls: 'h-4',
-                        className: 'mb-2 mx-auto',
-                      })}
-                    </div>
-                  </div>
+                <div className="mb-4">
+                  {skeleton({ widthCls: 'w-48', heightCls: 'h-8', className: 'mb-2' })}
+                </div>
+                <div className="mb-2">
+                  {skeleton({ widthCls: 'w-full', heightCls: 'h-6', className: 'mb-2' })}
+                </div>
+                <div className="mb-2">
+                  {skeleton({ widthCls: 'w-32', heightCls: 'h-4', className: 'mb-2' })}
+                </div>
+                <div>
+                  {skeleton({ widthCls: 'w-48', heightCls: 'h-4', className: 'mb-2' })}
                 </div>
               </div>
             </div>
@@ -75,53 +42,60 @@ const PublicationCard = ({
 
   const renderPublications = () => {
     return publications.map((item, index) => (
-      <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+      <div
+        className="card shadow-lg compact bg-base-100 w-full"
         key={index}
-        href={item.link}
-        target="_blank"
-        rel="noreferrer"
       >
         <div className="p-8 h-full w-full">
-          <div className="flex items-center flex-col">
+          <div className="flex items-start flex-col">
             <div className="w-full">
-              <div className="px-4">
-                <div className="text-center w-full">
-                  <h2 className="font-medium opacity-60 mb-2">{item.title}</h2>
-                  {item.conferenceName && (
-                    <p className="text-base-content opacity-50 text-sm">
-                      {item.conferenceName}
-                    </p>
-                  )}
-                  {item.journalName && (
-                    <p className="text-base-content opacity-50 text-sm">
-                      {item.journalName}
-                    </p>
-                  )}
-                  {item.authors && (
-                    <p className="text-base-content opacity-50 text-sm">
-                      Author: {item.authors}
-                    </p>
-                  )}
-                  {item.description && (
-                    <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
-                      {item.description}
-                    </p>
-                  )}
-                </div>
+              <div className="mb-3">
+                <h2 className="font-medium opacity-70 mb-2 text-left leading-tight text-[1.1rem]">
+                  {item.title}
+                </h2>
               </div>
+              {item.description && (
+                <p className="mb-3 text-base-content text-opacity-70 text-sm text-left leading-tight">
+                  {item.description}
+                </p>
+              )}
+              {item.authors && (
+                <p className="mb-3 text-base-content text-opacity-60 text-sm text-left leading-tight">
+                  {item.authors}
+                </p>
+              )}
+              {(item.journalName || item.conferenceName) && (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline btn-sm compact bg-base-200 text-base-content text-opacity-70 hover:bg-base-300 mt-2"
+                >
+                  {item.journalName || item.conferenceName}
+                </a>
+              )}
+              {item.codeUrl && (
+                <a
+                  href={item.codeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-sm rounded-full mt-2"
+                >
+                  Code
+                </a>
+              )}
             </div>
           </div>
         </div>
-      </a>
+      </div>
     ));
   };
 
   return (
     <Fragment>
       <div className="col-span-1 lg:col-span-2">
-        <div className="grid grid-cols-2 gap-6">
-          <div className="col-span-2">
+        <div className="flex flex-wrap gap-6">
+          <div className="w-full">
             <div className="card compact bg-base-100 shadow bg-opacity-40">
               <div className="card-body">
                 <div className="mx-3 flex items-center justify-between mb-2">
@@ -135,10 +109,8 @@ const PublicationCard = ({
                     )}
                   </h5>
                 </div>
-                <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {loading ? renderSkeleton() : renderPublications()}
-                  </div>
+                <div className="w-full flex flex-wrap gap-6">
+                  {loading ? renderSkeleton() : renderPublications()}
                 </div>
               </div>
             </div>
