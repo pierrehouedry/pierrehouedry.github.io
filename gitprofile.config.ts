@@ -61,7 +61,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://plmbox.math.cnrs.fr/f/12b875ab4b824886bec8/', // Empty fileUrl will hide the `Download Resume` button.
+      '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
   'Mathematics','PyTorch','Problem solving','Scientific Communication','Tensorflow','Python','Machine Learning', 'Deep Learning','Scikit-Learn','Research','Cryptography'
