@@ -106,6 +106,7 @@ const CONFIG = {
       journalName: 'ArXiv',
       authors: 'Pierre Houedry',
       link: 'https://arxiv.org/abs/2309.13277',
+      year: '2024',
       description:
         'We introduce novel concepts and establish a formal framework for twisted differential operators in the context of several variables.',
     },
@@ -116,6 +117,7 @@ const CONFIG = {
       authors: 'Pierre Houedry, Nicolas Courty, Florestan Martin-Baillon, Laetitia Chapel, Titouan Vayer',
       link: 'https://arxiv.org/abs/2505.21073',
       description: 'The paper proposes DeltaZero, a differentiable method to approximate metric spaces with tree metrics using smooth δ-hyperbolicity.',
+      year: '2025'
     }
   ],
   googleAnalytics: {
