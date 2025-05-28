@@ -1,3 +1,24 @@
+import { Fragment } from 'react';
+import { SanitizedPublication } from '../../interfaces/sanitized-config';
+import { skeleton } from '../../utils';
+
+const PublicationCard = ({
+  publications,
+  loading,
+}: {
+  publications: SanitizedPublication[];
+  loading: boolean;
+}) => {
+  const renderSkeleton = () => {
+    return publications.map((_, index) => (
+      <div className="w-full border-b border-base-300 py-4" key={index}>
+        {skeleton({ widthCls: 'w-48', heightCls: 'h-6', className: 'mb-2' })}
+        {skeleton({ widthCls: 'w-full', heightCls: 'h-4', className: 'mb-1' })}
+        {skeleton({ widthCls: 'w-1/2', heightCls: 'h-4', className: 'mb-1' })}
+      </div>
+    ));
+  };
+
 const renderPublications = () => {
   return publications.map((item, index) => (
     <div className="w-full border-b border-base-300 py-4" key={index}>
