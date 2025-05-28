@@ -76,7 +76,7 @@ const CONFIG = {
     },
     {
       company: 'University of Rennes',
-      position: 'Postdoctoral Researcher',
+      position: 'Researcher Engineer',
       from: '2023',
       to: '2024',
       companyLink: '',
