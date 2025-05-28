@@ -1,4 +1,3 @@
-
 import { Fragment } from 'react';
 import { SanitizedPublication } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
@@ -11,82 +10,53 @@ const PublicationCard = ({
   loading: boolean;
 }) => {
   const renderSkeleton = () => {
-    const array = [];
-    for (let index = 0; index < publications.length; index++) {
-      array.push(
-        <div className="card shadow-lg compact bg-base-100 w-full" key={index}>
-          <div className="p-8 h-full w-full">
-            <div className="flex items-start flex-col">
-              <div className="w-full">
-                <div className="mb-4">
-                  {skeleton({ widthCls: 'w-48', heightCls: 'h-8', className: 'mb-2' })}
-                </div>
-                <div className="mb-2">
-                  {skeleton({ widthCls: 'w-full', heightCls: 'h-6', className: 'mb-2' })}
-                </div>
-                <div className="mb-2">
-                  {skeleton({ widthCls: 'w-32', heightCls: 'h-4', className: 'mb-2' })}
-                </div>
-                <div>
-                  {skeleton({ widthCls: 'w-48', heightCls: 'h-4', className: 'mb-2' })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>,
-      );
-    }
-
-    return array;
+    return publications.map((_, index) => (
+      <div className="w-full border-b border-base-300 py-4" key={index}>
+        {skeleton({ widthCls: 'w-48', heightCls: 'h-6', className: 'mb-2' })}
+        {skeleton({ widthCls: 'w-full', heightCls: 'h-4', className: 'mb-1' })}
+        {skeleton({ widthCls: 'w-1/2', heightCls: 'h-4', className: 'mb-1' })}
+      </div>
+    ));
   };
 
   const renderPublications = () => {
     return publications.map((item, index) => (
-      <div
-        className="card shadow-lg compact bg-base-100 w-full"
-        key={index}
-      >
-        <div className="p-8 h-full w-full">
-          <div className="flex items-start flex-col">
-            <div className="w-full">
-              <div className="mb-3">
-                <h2 className="font-medium opacity-70 mb-2 text-left leading-tight text-[1.1rem]">
-                  {item.title}
-                </h2>
-              </div>
-              {item.description && (
-                <p className="mb-3 text-base-content text-opacity-70 text-sm text-left leading-tight">
-                  {item.description}
-                </p>
-              )}
-              {item.authors && (
-                <p className="mb-3 text-base-content text-opacity-60 text-sm text-left leading-tight">
-                  {item.authors}
-                </p>
-              )}
-              {(item.journalName || item.conferenceName) && (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline btn-sm compact bg-base-200 text-base-content text-opacity-70 hover:bg-base-300 mt-2"
-                >
-                  {item.journalName || item.conferenceName}
-                </a>
-              )}
-              {item.codeUrl && (
-                <a
-                  href={item.codeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-sm rounded-full mt-2"
-                >
-                  Code
-                </a>
-              )}
-            </div>
-          </div>
+      <div className="w-full border-b border-base-300 py-4" key={index}>
+        <div className="flex items-center flex-wrap gap-2 mb-1">
+          <h2 className="font-medium text-left leading-tight text-[1.1rem] opacity-80">
+            {item.title}
+          </h2>
+          {(item.journalName || item.conferenceName) && item.link && (
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-xs btn-outline rounded-full text-xs"
+            >
+              {item.journalName || item.conferenceName}
+            </a>
+          )}
         </div>
+        {item.description && (
+          <p className="text-base-content text-opacity-70 text-sm leading-tight mb-1">
+            {item.description}
+          </p>
+        )}
+        {item.authors && (
+          <p className="text-base-content text-opacity-50 text-sm leading-tight mb-1">
+            {item.authors}
+          </p>
+        )}
+        {item.codeUrl && (
+          <a
+            href={item.codeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-xs btn-primary rounded-full mt-1"
+          >
+            Code
+          </a>
+        )}
       </div>
     ));
   };
@@ -109,7 +79,7 @@ const PublicationCard = ({
                     )}
                   </h5>
                 </div>
-                <div className="w-full flex flex-wrap gap-6">
+                <div className="w-full">
                   {loading ? renderSkeleton() : renderPublications()}
                 </div>
               </div>
