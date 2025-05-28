@@ -109,6 +109,14 @@ const CONFIG = {
       description:
         'We introduce novel concepts and establish a formal framework for twisted differential operators in the context of several variables.',
     },
+     {
+      title: 'Bridging Arbitrary and Tree Metrics via Differentiable Gromov Hyperbolicity',
+      conferenceName: '',
+      journalName: 'ArXiv',
+      authors: 'Pierre Houedry, Nicolas Courty, Florestan Martin-Baillon, Laetitia Chapel, Titouan Vayer',
+      link: 'https://arxiv.org/abs/2505.21073',
+      description:
+    }
   ],
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
