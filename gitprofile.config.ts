@@ -115,7 +115,7 @@ const CONFIG = {
       journalName: 'ArXiv',
       authors: 'Pierre Houedry, Nicolas Courty, Florestan Martin-Baillon, Laetitia Chapel, Titouan Vayer',
       link: 'https://arxiv.org/abs/2505.21073',
-      description:
+      description: 'The paper proposes DeltaZero, a differentiable method to approximate metric spaces with tree metrics using smooth δ-hyperbolicity.',
     }
   ],
   googleAnalytics: {
