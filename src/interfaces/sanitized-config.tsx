@@ -98,7 +98,8 @@ export interface SanitizedPublication {
   authors?: string;
   link?: string;
   description?: string;
-  codeUrl?: string
+  codeUrl?: string;
+  year?: string;
 }
 
 export interface SanitizedGoogleAnalytics {
