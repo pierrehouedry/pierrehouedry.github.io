@@ -64,7 +64,7 @@ const CONFIG = {
       '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-  'Mathematics','PyTorch','Problem solving','Scientific Communication','Tensorflow','Python','Machine Learning', 'Deep Learning','Scikit-Learn','Research','Cryptography'
+  'Graph Machine Learning', 'Optimal Transport', 'Geometric Learning'
   ],
   experiences: [
     {
