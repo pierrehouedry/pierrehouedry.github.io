@@ -57,7 +57,7 @@ const CONFIG = {
     telegram: '',
     website: '',
     phone: '',
-    email: 'p.houedry@gmail.com',
+    email: 'pierre.houedry@irisa.fr',
   },
   resume: {
     fileUrl:
