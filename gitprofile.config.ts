@@ -117,6 +117,15 @@ const CONFIG = {
   year: '2025',
   description:
     'The paper proposes DeltaZero, a differentiable method to approximate metric spaces with tree metrics using smooth δ-hyperbolicity.',
+},
+    {
+  title: 'A conceptual framework for revealing minor bacterial signals in microbiome data through guided data transformation',
+  journalName: 'biorXiv',
+  authors: 'David Martin, Pierre Houedry, Fredéric Derbré and Valérie Monbet',
+  link: 'https://www.biorxiv.org/cgi/content/short/2025.05.31.656121v1.',
+  year: '2025',
+  description:
+    'This study proposes a data transformation that downweights dominant gut bacteria to better reveal minor signals linked to host health and improve machine learning analyses.',
 }
 
   ],
