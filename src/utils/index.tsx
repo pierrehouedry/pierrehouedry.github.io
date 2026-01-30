@@ -106,6 +106,7 @@ export const getSanitizedConfig = (
       about: {
         title: config?.about?.title || 'About me',
         description: config?.about?.description || '',
+        descriptionHtml: config?.about?.descriptionHtml || '',
         bullets: config?.about?.bullets || [],
       },
       publications: config?.publications?.filter((item) => item.title) || [],

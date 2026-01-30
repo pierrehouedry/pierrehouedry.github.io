@@ -105,6 +105,7 @@ export interface SanitizedPublication {
 export interface SanitizedAbout {
   title?: string;
   description?: string;
+  descriptionHtml?: string;
   bullets: Array<string>;
 }
 

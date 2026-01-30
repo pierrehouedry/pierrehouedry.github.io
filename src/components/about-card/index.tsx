@@ -11,7 +11,7 @@ const AboutCard = ({
 }) => {
   const renderSkeleton = () => {
     return (
-      <div className="w-full border-b border-base-300 py-4">
+      <div className="w-full py-4">
         {skeleton({ widthCls: 'w-48', heightCls: 'h-6', className: 'mb-2' })}
         {skeleton({ widthCls: 'w-full', heightCls: 'h-4', className: 'mb-1' })}
         {skeleton({ widthCls: 'w-1/2', heightCls: 'h-4', className: 'mb-1' })}
@@ -21,11 +21,18 @@ const AboutCard = ({
 
   const renderAbout = () => {
     return (
-      <div className="w-full border-b border-base-300 py-4">
-        {about.description && (
-          <p className="text-base-content text-opacity-70 text-sm leading-relaxed whitespace-pre-line mb-3">
-            {about.description}
-          </p>
+      <div className="w-full py-4">
+        {about.descriptionHtml ? (
+          <p
+            className="text-base-content text-opacity-70 text-sm leading-relaxed mb-3"
+            dangerouslySetInnerHTML={{ __html: about.descriptionHtml }}
+          />
+        ) : (
+          about.description && (
+            <p className="text-base-content text-opacity-70 text-sm leading-relaxed whitespace-pre-line mb-3">
+              {about.description}
+            </p>
+          )
         )}
         {about.bullets.length !== 0 && (
           <ul className="list-disc pl-5 text-sm text-base-content text-opacity-70 space-y-1">

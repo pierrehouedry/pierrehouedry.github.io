@@ -101,8 +101,8 @@ const CONFIG = {
   ],
   about: {
     title: 'About me',
-    description:
-      'Postdoctoral researcher at IRISA Vannes working on graph machine learning, optimal transport, and geometric learning under the supervision of  <a href="https://ncourty.github.io" target="_blank" rel="noopener noreferrer">Nicolas Courty</a>. Previously to this I was a research engineer at University of Rennes working on microbiome data analysis and machine learning applications in biology. I obtained my PhD in Mathematics from University of Rennes and University of Caen Normandie in 2023 under the supervision of <a href="https://www.bernardlestum.com" target="_blank" rel="noopener noreferrer">Benard Le Stum</a> and <a href="https://poineau.users.lmno.cnrs.fr" target="_blank" rel="noopener noreferrer">Jérôme Poineau</a>, where I worked on twisted differential operators in several variables and their applications to p-adic cohomology theories. \n\n I am curious about anything dont hesistate to contact me for collaborations or just to chat!',
+    descriptionHtml:
+      'Postdoctoral researcher at IRISA Vannes working on graph machine learning, optimal transport, and geometric learning under the supervision of <a href="https://ncourty.github.io" target="_blank" rel="noopener noreferrer">Nicolas Courty</a>. Previously I was a research engineer at University of Rennes working on microbiome data analysis and machine learning applications in biology. I obtained my PhD in Mathematics from University of Rennes and University of Caen Normandie in 2023 under the supervision of <a href="https://www.bernardlestum.com" target="_blank" rel="noopener noreferrer">Bernard Le Stum</a> and <a href="https://poineau.users.lmno.cnrs.fr" target="_blank" rel="noopener noreferrer">Jérôme Poineau</a>, where I worked on twisted differential operators in several variables and their applications to p-adic cohomology theories.<br /><br />I am curious about anything — don’t hesitate to contact me for collaborations or just to chat!',
   },
   publications: [
 {

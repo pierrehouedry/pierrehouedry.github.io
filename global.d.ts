@@ -240,6 +240,7 @@ interface Education {
 interface About {
   title?: string;
   description?: string;
+  descriptionHtml?: string;
   bullets?: Array<string>;
 }
 
