@@ -237,6 +237,12 @@ interface Education {
   to: string;
 }
 
+interface About {
+  title?: string;
+  description?: string;
+  bullets?: Array<string>;
+}
+
 interface Publication {
   title: string;
   conferenceName?: string;
@@ -398,6 +404,11 @@ interface Config {
    * Education list
    */
   educations?: Array<Education>;
+
+  /**
+   * About section
+   */
+  about?: About;
 
   /**
    * Publication list

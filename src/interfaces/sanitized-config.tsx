@@ -102,6 +102,12 @@ export interface SanitizedPublication {
   year?: string;
 }
 
+export interface SanitizedAbout {
+  title?: string;
+  description?: string;
+  bullets: Array<string>;
+}
+
 export interface SanitizedGoogleAnalytics {
   id?: string;
 }
@@ -147,6 +153,7 @@ export interface SanitizedConfig {
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;
+  about: SanitizedAbout;
   publications: Array<SanitizedPublication>;
   googleAnalytics: SanitizedGoogleAnalytics;
   hotjar: SanitizedHotjar;

@@ -64,7 +64,7 @@ const CONFIG = {
       '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-  'Graph Machine Learning', 'Optimal Transport', 'Geometric Learning'
+  'Optimal Transport', 'Geometric Learning', 'Algebraic Geometry', 'Graph Machine Learning',
   ],
   experiences: [
     {
@@ -99,6 +99,13 @@ const CONFIG = {
       to: '2019',
     },
   ],
+  about: {
+    title: 'About me',
+    description:
+      'Postdoctoral researcher at IRISA Vannes working on graph machine learning, optimal transport, and geometric learning under the supervision of  <a href="https://ncourty.github.io" target="_blank" rel="noopener noreferrer">Nicolas Courty</a>. Previously to this I was a research engineer at University of Rennes working on microbiome data analysis and machine learning applications in biology. I obtained my PhD in Mathematics from University of Rennes and University of Caen Normandie in 2023 under the supervision of <a href="https://www.bernardlestum.com" target="_blank" rel="noopener noreferrer">Benard Le Stum</a> and <a href="https://poineau.users.lmno.cnrs.fr" target="_blank" rel="noopener noreferrer">Jérôme Poineau</a>, where I worked on twisted differential operators in several variables and their applications to p-adic cohomology theories. \n\n
+      
+      I'm curious about anything don't hesistate to contact me for collaborations or just to chat!',
+  },
   publications: [
 {
   title: 'Twisted calculus in several variables',
@@ -134,7 +141,6 @@ journalName: 'Nuclear Instruments and Methods in Physics Research Section A: Acc
 authors: 'Enrica Belfiore, Pierre-Guy Allinei, Pierre Houedry, Meriem Bahhi, Simon Bartolacci, Adel Saleh, Mehdi Ben Mosbah, Rodolphe Antoni, Abdallah Lyoussi, Jean-Emmanuel Groetz',
 year: '2026',
 link: 'https://hal.science/hal-05123189/file/NIMA-first_review.pdf'
-
 }
 
   ],

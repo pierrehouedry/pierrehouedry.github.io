@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { MdInsertLink } from 'react-icons/md';
 import { SanitizedPublication } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
 
@@ -26,14 +27,16 @@ const PublicationCard = ({
           <h2 className="font-medium text-left leading-tight text-[1.1rem] opacity-80">
             {item.title}
           </h2>
-          {item.link && (item.journalName || item.conferenceName) && (
+          {item.link && (
             <a
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-xs btn-outline rounded-full text-xs"
+              className="btn btn-ghost btn-xs rounded-full"
+              aria-label="Open publication link"
+              title="Open publication link"
             >
-              {item.journalName || item.conferenceName}
+              <MdInsertLink className="text-base opacity-70" />
             </a>
           )}
         </div>
