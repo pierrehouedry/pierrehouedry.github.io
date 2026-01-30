@@ -248,6 +248,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                 <div className="lg:col-span-2 col-span-1">
                   <div className="grid grid-cols-1 gap-6">
                     {(sanitizedConfig.about.description ||
+                      sanitizedConfig.about.descriptionHtml ||
                       sanitizedConfig.about.bullets.length !== 0) && (
                       <AboutCard
                         loading={loading}
