@@ -11,7 +11,7 @@ const AboutCard = ({
 }) => {
   const renderSkeleton = () => {
     return (
-      <div className="w-full py-4">
+      <div className="w-full py-3">
         {skeleton({ widthCls: 'w-48', heightCls: 'h-6', className: 'mb-2' })}
         {skeleton({ widthCls: 'w-full', heightCls: 'h-4', className: 'mb-1' })}
         {skeleton({ widthCls: 'w-1/2', heightCls: 'h-4', className: 'mb-1' })}
@@ -21,15 +21,15 @@ const AboutCard = ({
 
   const renderAbout = () => {
     return (
-      <div className="w-full py-4">
+      <div className="w-full py-3">
         {about.descriptionHtml ? (
           <p
-            className="text-base-content text-opacity-70 text-sm leading-relaxed mb-3"
+            className="text-base-content text-opacity-70 text-sm leading-relaxed mb-2 [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-primary/50 [&_a:hover]:text-primary/80"
             dangerouslySetInnerHTML={{ __html: about.descriptionHtml }}
           />
         ) : (
           about.description && (
-            <p className="text-base-content text-opacity-70 text-sm leading-relaxed whitespace-pre-line mb-3">
+            <p className="text-base-content text-opacity-70 text-sm leading-relaxed whitespace-pre-line mb-2">
               {about.description}
             </p>
           )
