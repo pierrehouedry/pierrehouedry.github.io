@@ -111,7 +111,7 @@ const CONFIG = {
 },
 {
   title: 'Bridging Arbitrary and Tree Metrics via Differentiable Gromov Hyperbolicity',
-  journalName: 'arXiv',
+  journalName: 'NeurIPS',
   authors: 'Pierre Houedry, Nicolas Courty, Florestan Martin-Baillon, Laetitia Chapel, Titouan Vayer',
   link: 'https://arxiv.org/abs/2505.21073',
   year: '2025',
@@ -120,12 +120,21 @@ const CONFIG = {
 },
     {
   title: 'A conceptual framework for revealing minor bacterial signals in microbiome data through guided data transformation',
-  journalName: 'biorXiv',
+  journalName: 'Methods in Ecology and Evolution',
   authors: 'David Martin, Pierre Houedry, Fredéric Derbré and Valérie Monbet',
-  link: 'https://www.biorxiv.org/cgi/content/short/2025.05.31.656121v1.',
+  link: 'https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210x.70223',
   year: '2025',
   description:
     'This study proposes a data transformation that downweights dominant gut bacteria to better reveal minor signals linked to host health and improve machine learning analyses.',
+},
+
+{
+title: 'Comparative Assessment of Feature Extraction for Fast Neutron Spectra Prediction with Machine Learning Algorithms using a CVD Diamond Detector',
+journalName: 'Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment',
+authors: 'Enrica Belfiore, Pierre-Guy Allinei, Pierre Houedry, Meriem Bahhi, Simon Bartolacci, Adel Saleh, Mehdi Ben Mosbah, Rodolphe Antoni, Abdallah Lyoussi, Jean-Emmanuel Groetz',
+year: '2026',
+link: 'https://hal.science/hal-05123189/file/NIMA-first_review.pdf'
+
 }
 
   ],
