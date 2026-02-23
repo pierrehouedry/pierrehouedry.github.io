@@ -38,6 +38,18 @@ const PublicationCard = ({
                 <MdPictureAsPdf className="text-base opacity-70" />
               </a>
             )}
+            {item.codeUrl && (
+              <a
+                href={item.codeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex align-baseline ml-1"
+                aria-label="Open GitHub repository"
+                title="Open GitHub repository"
+              >
+                <FaGithub className="text-base opacity-70" />
+              </a>
+            )}
           </h2>
         </div>
 
@@ -56,19 +68,6 @@ const PublicationCard = ({
           </p>
         )}
 
-        {item.codeUrl && (
-          <a
-            href={item.codeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-sm opacity-70 hover:opacity-100 mt-1"
-            aria-label="Open GitHub repository"
-            title="Open GitHub repository"
-          >
-            <FaGithub className="text-base" />
-            <span>GitHub</span>
-          </a>
-        )}
       </div>
     ));
   };
