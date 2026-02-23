@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
-import { MdInsertLink } from 'react-icons/md';
+import { FaGithub } from 'react-icons/fa';
+import { MdPictureAsPdf } from 'react-icons/md';
 import { SanitizedPublication } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
 
@@ -15,7 +16,6 @@ const PublicationCard = ({
       <div className="w-full border-b border-base-300 py-4" key={index}>
         {skeleton({ widthCls: 'w-48', heightCls: 'h-6', className: 'mb-2' })}
         {skeleton({ widthCls: 'w-full', heightCls: 'h-4', className: 'mb-1' })}
-        {skeleton({ widthCls: 'w-1/2', heightCls: 'h-4', className: 'mb-1' })}
       </div>
     ));
   };
@@ -23,22 +23,22 @@ const PublicationCard = ({
   const renderPublications = () => {
     return publications.map((item, index) => (
       <div className="w-full border-b border-base-300 py-4" key={index}>
-        <div className="flex items-center flex-wrap gap-2 mb-1">
+        <div className="mb-1">
           <h2 className="font-medium text-left leading-tight text-[1.1rem] opacity-80">
             {item.title}
+            {item.link && (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex align-baseline ml-1"
+                aria-label="Open publication link"
+                title="Open publication link"
+              >
+                <MdPictureAsPdf className="text-base opacity-70" />
+              </a>
+            )}
           </h2>
-          {item.link && (
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost btn-xs rounded-full"
-              aria-label="Open publication link"
-              title="Open publication link"
-            >
-              <MdInsertLink className="text-base opacity-70" />
-            </a>
-          )}
         </div>
 
         {item.authors && (
@@ -56,20 +56,17 @@ const PublicationCard = ({
           </p>
         )}
 
-        {item.description && (
-          <p className="text-base-content text-opacity-50 text-sm leading-tight mb-1">
-            {item.description}
-          </p>
-        )}
-
         {item.codeUrl && (
           <a
             href={item.codeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-xs btn-primary rounded-full mt-1"
+            className="inline-flex items-center gap-1 text-sm opacity-70 hover:opacity-100 mt-1"
+            aria-label="Open GitHub repository"
+            title="Open GitHub repository"
           >
-            Code
+            <FaGithub className="text-base" />
+            <span>GitHub</span>
           </a>
         )}
       </div>

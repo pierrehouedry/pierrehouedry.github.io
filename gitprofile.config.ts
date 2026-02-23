@@ -12,7 +12,7 @@ const CONFIG = {
   base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: false, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -119,6 +119,7 @@ const CONFIG = {
   journalName: 'NeurIPS',
   authors: 'Pierre Houedry, Nicolas Courty, Florestan Martin-Baillon, Laetitia Chapel, Titouan Vayer',
   link: 'https://arxiv.org/abs/2505.21073',
+  codeUrl: 'https://github.com/pierrehouedry/DifferentiableHyperbolicity',
   year: '2025',
   description:
     'The paper proposes DeltaZero, a differentiable method to approximate metric spaces with tree metrics using smooth δ-hyperbolicity.',
@@ -128,6 +129,7 @@ const CONFIG = {
   journalName: 'Methods in Ecology and Evolution',
   authors: 'David Martin, Pierre Houedry, Fredéric Derbré and Valérie Monbet',
   link: 'https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210x.70223',
+  codeUrl: 'https://github.com/pierrehouedry/BiomeSampler',
   year: '2025',
   description:
     'This study proposes a data transformation that downweights dominant gut bacteria to better reveal minor signals linked to host health and improve machine learning analyses.',
