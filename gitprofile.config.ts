@@ -117,7 +117,7 @@ const CONFIG = {
   journalName: 'arXiv',
   authors: 'Pierre Houedry, Iskander Legheraba, Léo Buecher, Nicolas Courty',
   link: 'https://arxiv.org/abs/2605.18389',
-  year: '2024',
+  year: '2026',
   description:
     'A fast spherical Sinkhorn algorithm exploiting harmonic analysis on the 2-sphere, with theoretical guarantees and applications to climate model evaluation.',
 },
