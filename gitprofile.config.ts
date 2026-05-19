@@ -68,10 +68,17 @@ const CONFIG = {
   ],
   experiences: [
     {
+      company: 'INRIA Rennes',
+      position: 'Postdoctoral Researcher',
+      from: '2024',
+      to: '2025',
+      companyLink: '',
+    },
+    {
       company: 'IRISA Vannes',
       position: 'Postdoctoral Researcher',
-      from: 'October 2024',
-      to: 'present',
+      from: '2024',
+      to: '2025',
       companyLink: '',
     },
     {
@@ -87,7 +94,7 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'University of Rennes & University of Caen Normandie',
+      institution: 'University of Caen Normandie',
       degree: 'PhD in Mathematics',
       from: '2020',
       to: '2023',
@@ -102,17 +109,17 @@ const CONFIG = {
   about: {
     title: 'About me',
     descriptionHtml:
-      'Postdoctoral researcher at IRISA Vannes working on graph machine learning, optimal transport, and geometric learning under the supervision of <a href="https://ncourty.github.io" target="_blank" rel="noopener noreferrer">Nicolas Courty</a>. Previously I was a research engineer at University of Rennes working on microbiome data analysis and machine learning applications in biology. I obtained my PhD in Mathematics from University of Rennes and University of Caen Normandie in 2023 under the supervision of <a href="https://www.bernardlestum.com" target="_blank" rel="noopener noreferrer">Bernard Le Stum</a> and <a href="https://poineau.users.lmno.cnrs.fr" target="_blank" rel="noopener noreferrer">Jérôme Poineau</a>, where I worked on twisted differential operators in several variables and their applications to p-adic cohomology theories.<br /><br />I am curious about anything — don’t hesitate to contact me for collaborations or just to chat!',
+      'Postdoctoral researcher at INRIA Rennes working on graph machine learning, optimal transport, and geometric learning under the supervision of <a href="https://tvayer.github.io" target="_blank" rel="noopener noreferrer">Titouan Vayer</a>. Previously I was a postdoctoral researcher in OBELIX team at IRISA Vannes under the supervision of <a href="https://ncourty.github.io" target="_blank" rel="noopener noreferrer">Nicolas Courty</a>. I obtained my PhD in Mathematics from University of Caen Normandie in 2023 under the supervision of <a href="https://www.bernardlestum.com" target="_blank" rel="noopener noreferrer">Bernard Le Stum</a> and <a href="https://poineau.users.lmno.cnrs.fr" target="_blank" rel="noopener noreferrer">Jérôme Poineau</a>, where I worked on twisted differential operators in several variables and their applications to p-adic cohomology theories.<br /><br />I am curious about anything — don’t hesitate to contact me for collaborations or just to chat!',
   },
   publications: [
-{
-  title: 'Twisted calculus in several variables',
+  {
+  title: 'Spherical Harmonic Optimal Transport: Application to Climate Models Comparisons',
   journalName: 'arXiv',
-  authors: 'Pierre Houedry',
-  link: 'https://arxiv.org/abs/2309.13277',
+  authors: 'Pierre Houedry, Iskander Legheraba, Léo Buecher, Nicolas Courty',
+  link: 'https://arxiv.org/abs/2605.18389',
   year: '2024',
   description:
-    'We introduce novel concepts and establish a formal framework for twisted differential operators in the context of several variables.',
+    'A fast spherical Sinkhorn algorithm exploiting harmonic analysis on the 2-sphere, with theoretical guarantees and applications to climate model evaluation.',
 },
 {
   title: 'Bridging Arbitrary and Tree Metrics via Differentiable Gromov Hyperbolicity',
@@ -124,7 +131,7 @@ const CONFIG = {
   description:
     'The paper proposes DeltaZero, a differentiable method to approximate metric spaces with tree metrics using smooth δ-hyperbolicity.',
 },
-    {
+{
   title: 'A conceptual framework for revealing minor bacterial signals in microbiome data through guided data transformation',
   journalName: 'Methods in Ecology and Evolution',
   authors: 'David Martin, Pierre Houedry, Fredéric Derbré and Valérie Monbet',
@@ -134,15 +141,15 @@ const CONFIG = {
   description:
     'This study proposes a data transformation that downweights dominant gut bacteria to better reveal minor signals linked to host health and improve machine learning analyses.',
 },
-
 {
-title: 'Comparative Assessment of Feature Extraction for Fast Neutron Spectra Prediction with Machine Learning Algorithms using a CVD Diamond Detector',
-journalName: 'Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment',
-authors: 'Enrica Belfiore, Pierre-Guy Allinei, Pierre Houedry, Meriem Bahhi, Simon Bartolacci, Adel Saleh, Mehdi Ben Mosbah, Rodolphe Antoni, Abdallah Lyoussi, Jean-Emmanuel Groetz',
-year: '2026',
-link: 'https://hal.science/hal-05123189/file/NIMA-first_review.pdf'
-}
-
+  title: 'Twisted calculus in several variables',
+  journalName: 'arXiv',
+  authors: 'Pierre Houedry',
+  link: 'https://arxiv.org/abs/2309.13277',
+  year: '2024',
+  description:
+    'We introduce novel concepts and establish a formal framework for twisted differential operators in the context of several variables.',
+},
   ],
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
