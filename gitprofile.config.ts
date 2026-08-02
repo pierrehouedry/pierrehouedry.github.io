@@ -151,7 +151,7 @@ const CONFIG = {
 },
 {
   title: 'Twisted calculus in several variables',
-  journalName: 'arXiv',
+  journalName: 'To appear in Tokyo Journal of Mathematics Vol.49, No.2',
   authors: 'Pierre Houedry',
   link: 'https://arxiv.org/abs/2309.13277',
   year: '2024',
