@@ -122,6 +122,14 @@ const CONFIG = {
     'A fast spherical Sinkhorn algorithm exploiting harmonic analysis on the 2-sphere, with theoretical guarantees and applications to climate model evaluation.',
 },
 {
+  title: 'Regularized LSTM models for cleaning multivariate time series from low-cost sensors for pollen detection in the air',
+  journalName: 'Stochastic Environmental Research and Risk Assessment',
+  authors: 'M’Hammed Oudrane, Pierre Houedry, Valérie Monbet, Johann Lauthier, Houssam Al Azari',
+  link: 'https://link.springer.com/article/10.1007/s00477-026-03270-7',
+  year: '2026',
+  description:
+'A reference-regularized LSTM autoencoder framework for anomaly correction in multivariate low-cost pollen-sensor time series'},
+{
   title: 'Bridging Arbitrary and Tree Metrics via Differentiable Gromov Hyperbolicity',
   journalName: 'NeurIPS',
   authors: 'Pierre Houedry, Nicolas Courty, Florestan Martin-Baillon, Laetitia Chapel, Titouan Vayer',
