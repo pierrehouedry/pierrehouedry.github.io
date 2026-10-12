@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['pierrehouedry/BiomeSampler','pierrehouedry/DifferentiableHyperbolicity'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['pierrehouedry/BiomeSampler','pierrehouedry/DifferentiableHyperbolicity','pierrehouedry/FastCDTW'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -112,6 +112,16 @@ const CONFIG = {
       'Postdoctoral researcher at INRIA Rennes working on graph machine learning, optimal transport, and geometric learning under the supervision of <a href="https://tvayer.github.io" target="_blank" rel="noopener noreferrer">Titouan Vayer</a>. Previously I was a postdoctoral researcher in OBELIX team at IRISA Vannes under the supervision of <a href="https://ncourty.github.io" target="_blank" rel="noopener noreferrer">Nicolas Courty</a>. I obtained my PhD in Mathematics from University of Caen Normandie in 2023 under the supervision of <a href="https://www.bernardlestum.com" target="_blank" rel="noopener noreferrer">Bernard Le Stum</a> and <a href="https://poineau.users.lmno.cnrs.fr" target="_blank" rel="noopener noreferrer">Jérôme Poineau</a>, where I worked on twisted differential operators in several variables and their applications to p-adic cohomology theories.<br /><br />I am curious about anything — don’t hesitate to contact me for collaborations or just to chat!',
   },
   publications: [
+{
+  title: 'Fast Gradient-Based Approximation of Continuous Dynamic Time Warping',
+  journalName: 'arXiv',
+  authors: 'Pierre Houedry, Romain Tavenard, Nicolas Courty, Romaric Gaudel',
+  link: 'https://arxiv.org/abs/2610.13129',
+  codeUrl: 'https://github.com/pierrehouedry/FastCDTW',
+  year: '2026',
+  description:
+    'FastCDTW, a GPU-friendly approximate solver for Continuous DTW with exact closed-form gradients for piecewise-linear warpings and an unbiased Monte Carlo estimator for smooth ones.',
+},
   {
   title: 'Spherical Harmonic Optimal Transport: Application to Climate Models Comparisons',
   journalName: 'arXiv',
