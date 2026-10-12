@@ -128,7 +128,8 @@ const CONFIG = {
   link: 'https://link.springer.com/article/10.1007/s00477-026-03270-7',
   year: '2026',
   description:
-'A reference-regularized LSTM autoencoder framework for anomaly correction in multivariate low-cost pollen-sensor time series'},
+'A reference-regularized LSTM autoencoder framework for anomaly correction in multivariate low-cost pollen-sensor time series'
+},
 {
   title: 'Bridging Arbitrary and Tree Metrics via Differentiable Gromov Hyperbolicity',
   journalName: 'NeurIPS',
